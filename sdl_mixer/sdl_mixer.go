@@ -1,8 +1,7 @@
 package mix
 
-//#cgo windows LDFLAGS: -lSDL2 -lSDL2_mixer
-//#cgo linux freebsd darwin pkg-config: sdl2
-//#cgo linux freebsd darwin LDFLAGS: -lSDL2_mixer
+//#cgo pkg-config: sdl2
+//#cgo LDFLAGS: -lSDL2_mixer
 //#include <stdlib.h>
 //#include "sdl_mixer_wrapper.h"
 //
@@ -30,7 +29,7 @@ package mix
 import "C"
 import "unsafe"
 import "reflect"
-import "github.com/veandco/go-sdl2/sdl"
+import "github.com/abextm/go-sdl2/sdl"
 
 type Chunk struct {
 	allocated int32

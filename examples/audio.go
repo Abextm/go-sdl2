@@ -9,7 +9,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/veandco/go-sdl2/sdl"
+	"github.com/abextm/go-sdl2/sdl"
 )
 
 const (
